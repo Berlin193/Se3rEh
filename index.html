@@ -9,36 +9,59 @@
 <body>
 
 <header>
-  <h1>سعرها ايه؟</h1>
+  <div class="header-top">
+    <h1>سعرها ايه؟</h1>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" title="تبديل المظهر">🌙</button>
+      <div id="userArea"></div>
+    </div>
+  </div>
   <p>أرشيف أسعار جماعي — سجّل وشوف أسعار السلع في منطقتك</p>
 </header>
 
 <main>
-  <section id="add-price">
-    <h2>ضيف سعر</h2>
-    <form id="priceForm">
-      <input type="text" id="itemName" placeholder="اسم السلعة (مثلا: كيلو رز)" required>
-      <input type="number" id="itemPrice" placeholder="السعر بالجنيه" required>
-      <input type="text" id="itemPlace" placeholder="المحافظة أو المنطقة" required>
-      <button type="submit">إضافة</button>
+
+  <section id="login-section" class="card">
+    <h2>تسجيل الدخول</h2>
+    <form id="loginForm">
+      <input type="text" id="loginName" placeholder="اكتب اسمك" required>
+      <button type="submit">دخول</button>
     </form>
   </section>
 
-  <section id="prices-list">
-    <h2>الأسعار المسجلة</h2>
-    <table id="pricesTable">
-      <thead>
-        <tr>
-          <th>السلعة</th>
-          <th>السعر</th>
-          <th>المكان</th>
-          <th>التاريخ</th>
-        </tr>
-      </thead>
-      <tbody id="pricesBody">
-      </tbody>
-    </table>
+  <section id="app-section" class="card hidden">
+
+    <section id="add-price" class="card">
+      <h2>ضيف سعر</h2>
+      <form id="priceForm">
+        <input type="text" id="itemName" placeholder="اسم السلعة (مثلا: كيلو رز)" required>
+        <input type="number" id="itemPrice" placeholder="السعر بالجنيه" required>
+        <input type="text" id="itemPlace" placeholder="المحافظة أو المنطقة" required>
+        <button type="submit">إضافة</button>
+      </form>
+    </section>
+
+    <section id="prices-list" class="card">
+      <h2>الأسعار المسجلة</h2>
+      <div class="table-wrap">
+        <table id="pricesTable">
+          <thead>
+            <tr>
+              <th>السلعة</th>
+              <th>السعر</th>
+              <th>المكان</th>
+              <th>التاريخ</th>
+              <th>بواسطة</th>
+            </tr>
+          </thead>
+          <tbody id="pricesBody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
   </section>
+
 </main>
 
 <footer>
