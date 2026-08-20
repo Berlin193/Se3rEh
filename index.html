@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سعرها ايه</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>سعرها ايه؟</h1>
+  <p>أرشيف أسعار جماعي — سجّل وشوف أسعار السلع في منطقتك</p>
+</header>
+
+<main>
+  <section id="add-price">
+    <h2>ضيف سعر</h2>
+    <form id="priceForm">
+      <input type="text" id="itemName" placeholder="اسم السلعة (مثلا: كيلو رز)" required>
+      <input type="number" id="itemPrice" placeholder="السعر بالجنيه" required>
+      <input type="text" id="itemPlace" placeholder="المحافظة أو المنطقة" required>
+      <button type="submit">إضافة</button>
+    </form>
+  </section>
+
+  <section id="prices-list">
+    <h2>الأسعار المسجلة</h2>
+    <table id="pricesTable">
+      <thead>
+        <tr>
+          <th>السلعة</th>
+          <th>السعر</th>
+          <th>المكان</th>
+          <th>التاريخ</th>
+        </tr>
+      </thead>
+      <tbody id="pricesBody">
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>مشروع مجتمعي مفتوح المصدر</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
